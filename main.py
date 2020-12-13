@@ -10,9 +10,9 @@ from email.mime.base import MIMEBase
 from email.mime.multipart import MIMEMultipart
 
 # mail client stuff
-sender_email = 'markofka.mailclient@gmail.com'  # SENDER EMAIL
-rec_email = 'markofka007@gmail.com'  # RECEIVER EMAIL
-password = 'PoopaCat'  # SENDER EMAIL PASSWORD
+sender_email = ''  # SENDER EMAIL
+rec_email = ''  # RECEIVER EMAIL
+password = ''  # SENDER EMAIL PASSWORD
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.ehlo()
 server.starttls()
