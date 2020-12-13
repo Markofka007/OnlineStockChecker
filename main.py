@@ -10,9 +10,9 @@ from email.mime.base import MIMEBase
 from email.mime.multipart import MIMEMultipart
 
 # mail client stuff
-sender_email = 'markofka.mailclient@gmail.com'  # SENDER EMAIL
-rec_email = 'markofka007@gmail.com'  # RECEIVER EMAIL
-password = 'PoopaCat'  # SENDER EMAIL PASSWORD
+sender_email = ''  # SENDER EMAIL
+rec_email = ''  # RECEIVER EMAIL
+password = ''  # SENDER EMAIL PASSWORD
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.ehlo()
 server.starttls()
@@ -55,5 +55,5 @@ while True:
         else:
             # print(f"{datetime.now()} <PST>: {driver.title}: {colored('CURRENTLY IN STOCK', 'green')}")
             print(f"{colored(f'{datetime.now()}', 'white')}: {colored(f'[{site_list[array_pointer]}]', 'blue')} <{product_name[array_pointer]}>: {colored('CURRENTLY SOLD OUT', 'red')}")
-            send_email(f'{name} IS BACK IN STOCK!!!', url)
+            # send_email(f'{name} IS BACK IN STOCK!!!', url)
         array_pointer = + 1
